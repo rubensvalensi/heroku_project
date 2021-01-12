@@ -1,1 +1,1 @@
-web: gunicorn --chdir pythonProject2 flask_ex1:app
+web: gunicorn flask_ex1:app
