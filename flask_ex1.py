@@ -8,8 +8,8 @@ import json
 
 app = Flask(__name__)
 
-model_file = r'C:\Users\RUBENS\Desktop\JUPYTER NOTEBOOK\EXERCISES\heart_disease_model.pkl'
-testset_file = r'C:\Users\RUBENS\Desktop\JUPYTER NOTEBOOK\EXERCISES\test_set.pkl'
+model_file = 'heart_disease_model.pkl'
+testset_file = 'test_set.pkl'
 model = pickle.load(open(model_file, 'rb'))
 X, y = pickle.load(open(testset_file, 'rb'))
 print(model.score(X, y))
